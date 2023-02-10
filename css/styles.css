@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #2b2d42;
+  color: #fff;
+}
+
+#main {
+  padding: 2rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+#image {
+  border-radius: 8px;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+#img-caption {
+  padding-top: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+
+#tribute-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 10rem;
+}
+
+#headline {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.list-info {
+  padding-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+#tribute-link {
+  text-decoration: none;
+  color: yellow;
+  text-align: start;
+}
+
+#tribute-link:hover {
+  color: orange;
+  transition: 0.5s;
+}
+
+.tribute-text {
+  text-align: center;
+}
+
+@media screen and (max-width: 1900px) {
+  #img-div {
+    background: #415a77;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px black;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #main {
+    padding: 2rem 1rem;
+  }
+  #title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1.4rem;
+  }
+  #img-div {
+    background: none;
+    box-shadow: none;
+    padding:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #image {
+    min-height: 100%;
+    max-width: 30rem;
+    height: 12rem;
+    object-fit: none;
+  }
+  #img-caption {
+    font-size: 1.1rem;
+  }
+  #tribute-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  #headline {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .list-info {
+    padding-bottom: 3rem;
+    font-size: 1.3rem;
+  }
+  .tribute-text {
+    font-size: 1.2rem;
+  }
+}
